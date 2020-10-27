@@ -1,0 +1,185 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px;
+}
+a.nav-link {
+  color: #7d5e05;
+  text-decoration: underline;
+}
+
+.flip-card {
+  background-color: transparent;
+  height: 250px;
+  width: 250px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:active .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+#shapetriangle {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 25px solid #1f1f1f;
+  display: inline-block;
+  background: white;
+}
+
+.red {
+  background: red;
+}
+.red1 {
+  background: #f16161;
+}
+.red2 {
+  background: #f69fa0;
+}
+.orange {
+  background: orange;
+}
+.orange1 {
+  background: #f99f62;
+}
+.orange2 {
+  background: #fbb57b;
+}
+.blue {
+  background: #09c2db;
+}
+.blue1 {
+  background: #8bd3dc;
+}
+.blue2 {
+  background: #b9e3e8;
+}
+.indigo {
+  background: #0e38ad;
+}
+.indigo1 {
+  background: #546ab2;
+}
+.indigo2 {
+  background: #9c96c9;
+}
+.green {
+  background: green;
+}
+.green1 {
+  background: #97cd7e;
+}
+.green2 {
+  background: #c6e2bb;
+}
+.black {
+  background: black;
+}
+.black1 {
+  background: #545454;
+}
+.black2 {
+  background: #b2b2b2;
+}
+.yellow {
+  background: yellow;
+}
+.yellow1 {
+  background: #f7f754;
+}
+.yellow2 {
+  background: #f7f4b1;
+}
+.purple {
+  background: #b9509e;
+}
+.purple1 {
+  background: #d178b1;
+}
+.purple2 {
+  background: #e3abce;
+}
+
+.white {
+  background: white;
+  border: 1px solid gray;
+  float: none;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.palette,
+.pickr .pcr-button {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: 2px 3px;
+  cursor: pointer;
+  border-radius: 0.15em;
+}
+
+.pickr {
+  display: inline-block;
+}
+
+.pickr .pcr-button {
+  top: -2px;
+  padding: 0;
+}
+
+.pickr .pcr-button:after {
+  background-image: url(more-stroky.png);
+  background-size: 100% 100%;
+}
+
+div.toolbar {
+  user-select: none;
+}
+
+div.toolbar ul.nav li:hover {
+  cursor: pointer;
+  background: #FFF;
+}
